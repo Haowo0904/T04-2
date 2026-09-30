@@ -21,8 +21,6 @@
 
 .responsive-svg-container > svg {
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 html { scroll-behavior: smooth; }

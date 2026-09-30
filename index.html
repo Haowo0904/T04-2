@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn about appliance energy consumption in Australian homes.">
+  <title>PowerWise Australia | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" data-nav-page="home" aria-label="PowerWise Australia home">
+        <img src="PowerIcon.png" alt="" width="46" height="46">
+        <span>Power<span>Wise</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+      </button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html" data-nav-page="home">Home</a></li>
+        <li><a href="televisions.html" data-nav-page="televisions">Televisions</a></li>
+        <li><a href="about.html" data-nav-page="about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="main-content">Appliance Energy Consumption</h1>
+  <div id="content"></div>
+  <!-- Give the SVG a size so shapes can be seen -->
+  <svg width="300" height="150"></svg>
+
+  <footer class="site-footer">
+    <p>© <span data-current-year>2026</span> Haowo0904</p>
+    <p>Created with assistance from OpenAI Codex (Generative AI).</p>
+  </footer>
+  <script src="script.js" defer></script>
+  <!-- Load D3 first, then your D3 code file -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="energy-d3.js"></script>
+</body>
+</html>

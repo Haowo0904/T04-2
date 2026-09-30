@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare television energy use and estimate running costs in Australia.">
+  <title>PowerWise Australia | Televisions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="televisions">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="index.html" data-nav-page="home" aria-label="PowerWise Australia home">
+        <img src="PowerIcon.png" alt="" width="46" height="46">
+        <span>Power<span>Wise</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+      <ul class="nav-links" id="primary-menu">
+        <li><a href="index.html" data-nav-page="home">Home</a></li>
+        <li><a href="televisions.html" data-nav-page="televisions">Televisions</a></li>
+        <li><a href="about.html" data-nav-page="about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-banner">
+      <div class="reveal">
+        <p class="eyebrow">Television energy</p>
+        <h1>More screen.<br><em>Less waste.</em></h1>
+        <p>Screen size, display technology, brightness and viewing time all influence how much electricity a television uses.</p>
+      </div>
+      <div class="tv-illustration reveal" aria-hidden="true">
+        <div class="tv-screen"><span>ENERGY</span><strong>★ ★ ★ ★</strong></div>
+        <div class="tv-stand"></div>
+      </div>
+    </section>
+
+    <section class="content-section split-section" aria-labelledby="calculator-heading">
+      <div class="calculator-card reveal">
+        <p class="eyebrow">Quick estimate</p>
+        <h2 id="calculator-heading">TV running cost</h2>
+        <form id="energy-calculator">
+          <label for="wattage">Television power <span>watts</span></label>
+          <input id="wattage" name="wattage" type="number" min="1" max="2000" value="120" required>
+          <label for="hours">Daily viewing <span>hours</span></label>
+          <input id="hours" name="hours" type="number" min="0" max="24" step="0.5" value="4" required>
+          <label for="tariff">Electricity tariff <span>cents/kWh</span></label>
+          <input id="tariff" name="tariff" type="number" min="1" max="200" step="0.01" value="35" required>
+          <button class="button button-primary" type="submit">Calculate annual cost</button>
+        </form>
+        <div class="result-panel" id="calculation-result" aria-live="polite">
+          <span>Estimated annual running cost</span>
+          <strong>$61.32</strong>
+          <small>Based on 175.2 kWh per year</small>
+        </div>
+      </div>
+
+      <div class="tips-panel reveal">
+        <p class="eyebrow">Before you buy</p>
+        <h2>Compare the whole picture</h2>
+        <div class="tip-list">
+          <article><span>01</span><div><h3>Look for more stars</h3><p>More stars indicate better energy efficiency compared with products of a similar size.</p></div></article>
+          <article><span>02</span><div><h3>Compare annual kWh</h3><p>The energy consumption figure estimates electricity use under standard test conditions.</p></div></article>
+          <article><span>03</span><div><h3>Choose the right size</h3><p>Larger screens usually consume more energy, so match the screen to the room and viewing distance.</p></div></article>
+          <article><span>04</span><div><h3>Use energy-saving settings</h3><p>Automatic brightness, sleep timers and standby controls can reduce unnecessary use.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section" aria-labelledby="charts-heading">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Television data</p>
+        <h2 id="charts-heading">Explore the energy patterns</h2>
+        <p>These charts provide three different views of television power consumption, display technology and screen size.</p>
+      </div>
+      <div class="chart-gallery">
+        <figure class="chart-card reveal">
+          <img src="assets/charts/bar-chart.png" alt="Bar chart comparing average mode power across ten television brands, with Spark Electronics highest and Tavice lowest." width="1373" height="440" loading="lazy">
+          <figcaption><strong>Average power by brand</strong><span>Compares average mode power across television brands in the dataset.</span></figcaption>
+        </figure>
+        <figure class="chart-card reveal">
+          <img src="assets/charts/pie-chart.png" alt="Pie chart showing LCD LED as the largest television display category, followed by LCD and OLED." width="1373" height="440" loading="lazy">
+          <figcaption><strong>Display technology mix</strong><span>Shows the proportion of LCD (LED), LCD and OLED models represented.</span></figcaption>
+        </figure>
+        <figure class="chart-card reveal">
+          <img src="assets/charts/scatter-plot.png" alt="Scatter plot showing that average mode power generally rises as television screen size increases." width="1373" height="440" loading="lazy">
+          <figcaption><strong>Screen size and power</strong><span>Highlights the general relationship between screen size in inches and average mode power.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="info-note reveal">
+      <strong>How the estimate works</strong>
+      <p>Watts ÷ 1,000 × hours per day × 365 × tariff. Results are illustrative; actual use and electricity prices vary.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-current-year>2026</span> Haowo0904</p>
+    <p>Created with assistance from OpenAI Codex (Generative AI).</p>
+  </footer>
+</body>
+</html>

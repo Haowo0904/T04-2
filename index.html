@@ -33,13 +33,19 @@
   <!-- Give the SVG a size so shapes can be seen -->
   <svg width="300" height="150"></svg>
 
+  <!-- NEW: Container for T04-3 chart -->
+  <div class="responsive-svg-container"></div>
+
   <footer class="site-footer">
     <p>© <span data-current-year>2026</span> Haowo0904</p>
     <p>Created with assistance from OpenAI Codex (Generative AI).</p>
   </footer>
   <script src="script.js" defer></script>
-  <!-- Load D3 first, then your D3 code file -->
+  <!-- D3 library -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="energy-d3.js"></script>
+  <!-- NEW: JS for T04-3 only -->
+  <script src="t04-3-bars.js"></script>
+  <!-- Old T04-2 demo (temporarily disabled) -->
+  <!-- <script src="energy-d3.js"></script> -->
 </body>
 </html>
